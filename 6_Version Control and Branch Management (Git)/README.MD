@@ -1,0 +1,3 @@
+inisialisasi penggunaan GIT 
+Git adalah version control system. guna git adalah melacak perubahan yang kalian buat pada kumpulan file menggunakan commits.
+Bash adalah akronim dari Bourne Again Shell. Shell adalah aplikasi terminal yang digunakan untuk berinteraksi dengan sistem operasi melalui perintah tertulis. Bash adalah shell default yang populer di Linux dan macOS. Git Bash adalah paket yang menginstal Bash, beberapa utilitas bash umum, dan Git pada sistem operasi Windows.
