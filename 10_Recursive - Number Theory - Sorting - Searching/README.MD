@@ -1,0 +1,7 @@
+dalam minggu ini saya mempelajari Recursive - Number Theory - Sorting - Searching
+recursive, Recursion adalah proses pengulangan barang dengan cara yang mirip. Konsep yang sama berlaku dalam bahasa pemrograman juga. Jika suatu program memungkinkan untuk memanggil suatu fungsi di dalam fungsi yang sama, maka itu disebut panggilan fungsi rekursif. 
+berikutnya 
+
+Selection Sort merupakan salah satu algoritma pengurutan yang pengunaannya sangat efisien dan sederhana, dimana melakukan pencarian index dengan isi nilai terkecil setelah itu ditukar dengan isi index yang lebih besar dari index dengan nilai terkecil itu, selanjutnya index terkecil kedua akan disimpan pada variable tmp (sementara) lalu ditukara dengan index kedua dan berulang terus sampai semua selesai terurut. Untuk mengetahui proses pengurutan ada dibagian kesimpulan.
+
+Algoritma Sequential Search adalah suatu teknik pencarian beruntun (sequential search) atau yang juga disebut dengan pencarian lurus (linear search), nilai yang dicari dibandingkan dengan nilai dari setiap elemen array data, mulai dari elemen pertama sampai nilai yang dicari ditemukan atau sampai elemen terakhir, dimana data-data tidak perlu diurutkan terlebih dahulu.

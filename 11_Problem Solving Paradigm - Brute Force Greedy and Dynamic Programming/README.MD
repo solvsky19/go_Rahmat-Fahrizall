@@ -1,0 +1,2 @@
+dalam minggu ini saya belajar tentang Problem Solving Paradigm - Brute Force Greedy and Dynamic Programming
+Problem solving merupakan cara mengidentifikasi dan menemukan solusi yang efektif untuk mengatasi masalah yang dihadapi. Pada dasarnya, kemampuan ini berkaitan dengan berbagai kemampuan lain seperti kemampuan mendengar, menganalisa, meneliti, kreativitas, komunikasi, kerja tim dan pengambilan keputusan.
