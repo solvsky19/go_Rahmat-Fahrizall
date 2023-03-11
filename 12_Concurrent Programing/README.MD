@@ -1,0 +1,1 @@
+hari ini saya belajar tentang Concurrency di Golang, Concurrency adalah kemampuan fungsi untuk berjalan secara independen satu sama lain. Paralelisme adalah properti run-time di mana dua atau lebih tugas dijalankan secara bersamaan. Melalui konkurensi, Anda ingin menentukan struktur yang tepat untuk program Anda.
