@@ -1,0 +1,1 @@
+hari ini saya belajar tentang CleanCode, Clean Code memiliki arti kode yang bersih. Lalu, apa maksudnya? Kode yang bersih adalah kode program yang memiliki format yang benar dan rapi, serta memiliki struktur kode yang tertata dengan baik.
