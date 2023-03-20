@@ -1,1 +1,1 @@
-hari ini saya belajar tentang CleanCode, Clean Code memiliki arti kode yang bersih. Lalu, apa maksudnya? Kode yang bersih adalah kode program yang memiliki format yang benar dan rapi, serta memiliki struktur kode yang tertata dengan baik.
+Hari ini saya belajar tentang DDL, DDL adalah singkatan dari Data Definition Language, DDL dapat di gunakan untuk mengoperasikan suatu skema struktur pada sebuah database, perintah utama yang dapat di gunakan pada DDL (Data Definition Language) adalah seperti CREATE, RENAME, ALTER, DROP.
