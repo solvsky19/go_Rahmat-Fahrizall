@@ -1,0 +1,295 @@
+{
+	"info": {
+		"_postman_id": "f94e1908-a7c4-477e-be5a-1048cb591e9b",
+		"name": "Skenario 2 tugas 14",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26480751"
+	},
+	"item": [
+		{
+			"name": "tugas1 get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tugas1 get id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/3",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tugas1 post data",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "userId",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "Id",
+							"value": "198",
+							"type": "text"
+						},
+						{
+							"key": "Title",
+							"value": "qwerty16",
+							"type": "text"
+						},
+						{
+							"key": "body",
+							"value": "2ls4l",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts?userId=2&Id=198&Title=qwerty16&body=2ls4l",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					],
+					"query": [
+						{
+							"key": "userId",
+							"value": "2"
+						},
+						{
+							"key": "Id",
+							"value": "198"
+						},
+						{
+							"key": "Title",
+							"value": "qwerty16"
+						},
+						{
+							"key": "body",
+							"value": "2ls4l"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas1 Delete data",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas2 Get ClientByID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/19",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"client",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tugas2 PUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/19",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"client",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Tugas2 Delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client/19",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"client",
+						"19"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tugas2 post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "IdUser",
+							"value": "200401131",
+							"type": "text"
+						},
+						{
+							"key": "nama",
+							"value": "SolvSky",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client?IdUser=200401131&nama=SolvSky",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"client"
+					],
+					"query": [
+						{
+							"key": "IdUser",
+							"value": "200401131"
+						},
+						{
+							"key": "nama",
+							"value": "SolvSky"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "TUGAS2 GET CLIENT All Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://virtserver.swaggerhub.com/sepulsa/RentABook-API/1.0.0/client?p=12&rp=13&client_id=14&status=1\nServer response",
+					"protocol": "https",
+					"host": [
+						"virtserver",
+						"swaggerhub",
+						"com"
+					],
+					"path": [
+						"sepulsa",
+						"RentABook-API",
+						"1.0.0",
+						"client"
+					],
+					"query": [
+						{
+							"key": "p",
+							"value": "12"
+						},
+						{
+							"key": "rp",
+							"value": "13"
+						},
+						{
+							"key": "client_id",
+							"value": "14"
+						},
+						{
+							"key": "status",
+							"value": "1\nServer response"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
