@@ -47,7 +47,7 @@ CREATE TABLE product_descriptions (
     product_id int(11),
     description TEXT,
     created_at TIMESTAMP DEFAULT NOW(),
-    updated_at TIMESTAMP DEFAULT NOW(),
+    updated_at TIMESTAMP DEFAULT NOW(),namecreated_at
     FOREIGN KEY(product_id) REFERENCES products(id)
 );
 

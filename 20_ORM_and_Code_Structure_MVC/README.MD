@@ -1,0 +1,1 @@
+Pada hari ini saya belajar tentang bagaimana menghubungkan setiap data ke database dan mengubah isi dari data tersebut sehingga bisa menghasilkan output yang di inginkan, dan menampilkan hasil data ke dalam applikasi Postman
