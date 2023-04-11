@@ -1,13 +1,48 @@
 package controller
 
 import (
+	"middleware/config"
+	"middleware/lib/database"
+	"middleware/model"
 	"net/http"
-	"praktikum/config"
-	"praktikum/model"
+
 	"strconv"
 
 	"github.com/labstack/echo/v4"
 )
+
+func LoginUserController(c echo.Context) error {
+	user := model.User{}
+	c.Bind(&user)
+
+	users, e := database.LoginUsers(&user)
+	if e != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, e.Error())
+	}
+	return c.JSON(http.StatusOK, map[string]interface{}{
+		"status": "success login",
+		"users":  users,
+	})
+}
+
+func GetUserDetailControllers(c echo.Context) error {
+	id, err := strconv.Atoi(c.Param("id"))
+
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	users, err := database.GetDetailUsers((id))
+
+	if err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
+	}
+
+	return c.JSON(http.StatusOK, map[string]interface{}{
+		"status": "success",
+		"users":  users,
+	})
+}
 
 // get all user
 func GetUsersController(c echo.Context) error {
