@@ -1,0 +1,1 @@
+Hari ini saya belajar tentang unit testing, Unit testing adalah salah satu jenis proses otomatisasi test aplikasi software dengan scope yang paling kecil yang bisa di test. Disebut unit karena secara individual dan mandiri (tidak tergantung dengan flow proses yang lain) dapat di test sehingga dapat memastikan apakah outputnya sudah sesuai dengan ekspektasi kita.

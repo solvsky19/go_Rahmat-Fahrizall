@@ -3,29 +3,29 @@ package calculate
 import "testing"
 
 func TestAddition(t *testing.T) {
-	if Addition(2, 1) != 3 {
-		t.Error("Expected 1 (+) 2 to equal 3")
+	if Addition(4, 2) != 6 {
+		t.Error("Expected 4 (+) 2 to equal 6")
 	}
-	if Addition(-2, -1) != -3 {
-		t.Error("Expected -1 (+) -2 to equal -3")
+	if Addition(-4, -2) != -6 {
+		t.Error("Expected -4 (+) -2 to equal -6")
 	}
 }
 
 func TestSubstraction(t *testing.T) {
-	if Substraction(2, 3) != -1 {
-		t.Error("Expected 2 (-) 3 to equal -1")
+	if Substraction(7, 3) != 4 {
+		t.Error("Expected 7 (-) 3 to equal 4")
 	}
-	if Substraction(3, 1) != 2 {
-		t.Error("Expected 3 (-) 1 to equal 2")
+	if Substraction(12, 6) != 6 {
+		t.Error("Expected 12 (-) 6 to equal 6")
 	}
 }
 
 func TestMultiplication(t *testing.T) {
-	if Multiplication(2, 2) != 4 {
-		t.Error("Expected 2 (*) 2 to equal 4")
-	}
 	if Multiplication(3, 3) != 9 {
 		t.Error("Expected 3 (*) 3 to equal 9")
+	}
+	if Multiplication(4, 2) != 8 {
+		t.Error("Expected 4 (*) 2 to equal 8")
 	}
 }
 
