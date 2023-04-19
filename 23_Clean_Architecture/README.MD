@@ -1,0 +1,1 @@
+hari ini saya belajar tentang Clean Architecture, Clean Architecture adalah suatu pendekatan untuk desain arsitektur perangkat lunak yang memisahkan berbagai lapisan atau komponen dalam aplikasi dan memperkenalkan aturan yang jelas untuk interaksi antara mereka. Pendekatan ini bertujuan untuk membuat aplikasi yang mudah dimengerti, mudah diuji, dan mudah dirawat.
