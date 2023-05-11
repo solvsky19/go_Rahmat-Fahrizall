@@ -46,6 +46,7 @@ func UpdateTiketById(id uint, tiket *models.Tikets) (*models.Tikets, error) {
 	record.JenisTiket = tiket.JenisTiket
 	record.Penyanyi = tiket.Penyanyi
 	record.Waktu = tiket.Waktu
+	record.Harga = tiket.Harga
 
 	err = config.DB.Save(&record).Error
 	if err != nil {

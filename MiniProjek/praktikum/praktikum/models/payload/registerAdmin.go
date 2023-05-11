@@ -1,4 +1,4 @@
-package models
+package payload
 
 import (
 	"time"
@@ -7,8 +7,8 @@ import (
 )
 
 type Users struct {
-	ID        int    `gorm:"primaryKey"`
-	Name      string `json:"name" form:"name" gorm:"unique;not null"`
+	ID        uint   `gorm:"primaryKey"`
+	Name      string `json:"name" form:"name"`
 	Email     string `json:"email" form:"email"`
 	Password  string `json:"password" form:"password"`
 	Token     string `json:"token" form:"token"`

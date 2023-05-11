@@ -7,19 +7,19 @@ import (
 	"time"
 
 	jwt "github.com/dgrijalva/jwt-go"
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo"
 )
 
-func CreateToken(userId int) (string, error) {
-	claims := jwt.MapClaims{}
-	claims["authorized"] = true
-	claims["userId"] = userId
-	claims["exp"] = time.Now().Add(time.Hour * 1).Unix()
+// func CreateToken(userId int) (string, error) {
+// 	claims := jwt.MapClaims{}
+// 	claims["authorized"] = true
+// 	claims["userId"] = userId
+// 	claims["exp"] = time.Now().Add(time.Hour * 1).Unix()
 
-	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
-	return token.SignedString([]byte(constants.SECRET_JWT))
+// 	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+// 	return token.SignedString([]byte(constants.SECRET_JWT))
 
-}
+// }
 
 func ExtractTokenUserId(c echo.Context) int {
 	authHeader := c.Request().Header.Get("Authorization")
@@ -62,4 +62,44 @@ func AuthMiddleware(next echo.HandlerFunc) echo.HandlerFunc {
 
 		return next(c)
 	}
+}
+
+func CreatesToken(userId int, role string) (string, error) {
+	claims := jwt.MapClaims{}
+	claims["user_id"] = userId
+	claims["role_type"] = role
+	claims["authorized"] = true
+	claims["exp"] = time.Now().Add(time.Hour * 24).Unix()
+
+	token := jwt.NewWithClaims(jwt.SigningMethodHS256, claims)
+
+	return token.SignedString([]byte(constants.SECRET_JWT))
+}
+
+func IsAdmin(c echo.Context) (int, error) {
+	user := c.Get("user").(*jwt.Token)
+	if !user.Valid {
+		return 0, echo.NewHTTPError(401, "Unauthorized")
+	}
+	claims := user.Claims.(jwt.MapClaims)
+	if claims["role_type"] != constants.ADMIN {
+		return 0, echo.NewHTTPError(401, "Unauthorized")
+	}
+	userId := int(claims["user_id"].(float64))
+
+	return userId, nil
+}
+
+func IsUser(c echo.Context) (int, error) {
+	user := c.Get("user").(*jwt.Token)
+	if !user.Valid {
+		return 0, echo.NewHTTPError(401, "Unauthorized")
+	}
+	claims := user.Claims.(jwt.MapClaims)
+	if claims["role_type"] != constants.USER {
+		return 0, echo.NewHTTPError(401, "Unauthorized")
+	}
+	userId := int(claims["user_id"].(float64))
+
+	return userId, nil
 }

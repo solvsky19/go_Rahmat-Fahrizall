@@ -11,6 +11,7 @@ type Tikets struct {
 	JenisTiket string `json:"JenisTiket" form:"JenisTiket"`
 	Penyanyi   string `json:"Penyanyi" form:"Penyanyi"`
 	Waktu      string `json:"Waktu" form:"Waktu"`
+	Harga      string `json:"Harga" form:"Harga"`
 	DeletedAt  gorm.DeletedAt
 	CreatedAt  time.Time
 	UpdatedAt  time.Time

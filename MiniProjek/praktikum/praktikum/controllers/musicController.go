@@ -7,7 +7,7 @@ import (
 	"praktikum/models"
 	"strconv"
 
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo"
 )
 
 func GetAllMusicsController(c echo.Context) error {

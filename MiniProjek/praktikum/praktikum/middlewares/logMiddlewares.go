@@ -3,8 +3,8 @@ package middlewares
 import (
 	"fmt"
 
-	"github.com/labstack/echo/v4"
-	"github.com/labstack/echo/v4/middleware"
+	"github.com/labstack/echo"
+	"github.com/labstack/echo/middleware"
 )
 
 func LogMiddlewares(e *echo.Echo) {

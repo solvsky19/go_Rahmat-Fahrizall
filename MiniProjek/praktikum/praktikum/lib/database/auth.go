@@ -16,7 +16,7 @@ func LoginUsers(user *models.Users) (interface{}, error) {
 
 	}
 
-	token, err := middlewares.CreateToken(int(user.ID))
+	token, err := middlewares.CreatesToken(user.ID, user.Role)
 	if err != nil {
 		return "", fmt.Errorf("failed to create token: %v", err)
 	}

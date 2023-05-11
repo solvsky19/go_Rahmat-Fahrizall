@@ -2,6 +2,7 @@ package config
 
 import (
 	"fmt"
+	"praktikum/lib/seeder"
 	"praktikum/models"
 
 	"gorm.io/driver/mysql"
@@ -38,6 +39,7 @@ func InitDB() {
 	if err != nil {
 		panic(err)
 	}
+	seeder.DBSeed(DB)
 
 }
 

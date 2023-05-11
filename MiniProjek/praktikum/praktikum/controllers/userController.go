@@ -4,13 +4,19 @@ import (
 	"fmt"
 	"net/http"
 	"praktikum/lib/database"
+	"praktikum/middlewares"
 	"praktikum/models"
 	"strconv"
 
-	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo"
 )
 
 func GetAllUserControllers(c echo.Context) error {
+
+	if _, err := middlewares.IsAdmin(c); err != nil {
+		return c.JSON(401, "Unauthorized")
+	}
+
 	users, err := database.GetAllUsers()
 	if err != nil {
 		return echo.NewHTTPError(http.StatusBadRequest, err.Error())
