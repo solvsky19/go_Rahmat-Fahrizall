@@ -71,3 +71,4 @@ func DeleteTiketById(id uint) error {
 
 	return nil
 }
+

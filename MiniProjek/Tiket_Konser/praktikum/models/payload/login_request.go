@@ -1,3 +1,5 @@
+//request yang akan di tampilkan ketika user/admin login
+
 package payload
 
 type Logins struct {

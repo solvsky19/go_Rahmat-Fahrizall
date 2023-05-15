@@ -48,5 +48,6 @@ func InitialMigration() {
 	DB.AutoMigrate(&models.Musics{})
 	DB.AutoMigrate(&models.Tikets{})
 	DB.AutoMigrate(&models.InformasiAcaras{})
+	DB.AutoMigrate(&models.Order{})
 
 }

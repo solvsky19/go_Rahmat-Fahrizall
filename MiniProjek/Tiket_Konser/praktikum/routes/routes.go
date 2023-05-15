@@ -41,12 +41,19 @@ func New() *echo.Echo {
 	auth.PUT("/tikets/:id", controllers.UpdateTiketController)
 	auth.DELETE("/tikets/:id", controllers.DeleteTiketController)
 
-	//Tikets
+	//InformasiAcara
 	auth.GET("/InformasiAcaras", controllers.GetAllTiketsController)
 	auth.GET("/InformasiAcaras/:id", controllers.GetTiketByIdController)
 	auth.POST("/InformasiAcaras", controllers.CreateTiketController)
 	auth.PUT("/InformasiAcaras/:id", controllers.UpdateTiketController)
 	auth.DELETE("/InformasiAcaras/:id", controllers.DeleteTiketController)
 	// start the server, and log if it fails
+
+	// auth.GET("/Orders", controllers.GetAllOrdersController)
+	auth.GET("/Orders/:id", controllers.GetOrderByIdControllers)
+	auth.POST("/Orders", controllers.CreateOrderController)
+	auth.PUT("/Orders/:id", controllers.UpdateOrderController)
+	auth.DELETE("/Orders/:id", controllers.DeleteOrderController)
+
 	return e
 }

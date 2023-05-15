@@ -1,3 +1,5 @@
+//pengisian awal data ke dalam database
+
 package seeder
 
 import (
